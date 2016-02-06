@@ -1,0 +1,15 @@
+{
+  "name": "blinker",
+  "version": "1.0.0",
+  "description": "To blink LEDs",
+  "main": "index.js",
+  "dependencies": {
+    "johnny-five": "^0.9.19"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "nodemon index.js"
+  },
+  "author": "Moove",
+  "license": "ISC"
+}
