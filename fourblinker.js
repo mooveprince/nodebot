@@ -10,13 +10,15 @@ board.on('ready', function () {
     var delay = 1;
     board.counter = 0;
     for (var i = 0; i < leds.length; i++) {
-      var led = leds[i];
+      console.log ("Now Processing..." + i);
 
       board.wait(delay,function(){
+        console.log ("Inside Delay 1");  
         console.log(this.counter + " on")
         leds[this.counter].on();
       })
       board.wait(delay + 200,function(){
+          console.log ("Inside Delay 2");  
         console.log(this.counter + " off")
         leds[this.counter].off();
         this.counter = (this.counter + 1) % leds.length;
