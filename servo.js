@@ -5,11 +5,14 @@ board.on('ready', function () {
     
     var servo = new five.Servo (9);
     
-    servo.sweep();
+    servo.to (180, 5000);   //Take 5 sec to move to 180`
     
-    board.wait ('5000', function () {
+    /*servo.sweep(); */
+   
+    
+    board.wait ('5050', function () {
         servo.stop();
         servo.center();
-    });
+    }); 
     
 });
